@@ -10,7 +10,7 @@
 | Claire Cho | @claireecho | Led EDA, visualized dataset distributions, handled missing data |
 | Enrista Ilo | @enrista2112 | EDA and data augmentation |
 | Oyu Enkhbold | @oyu-e | Built and trained CNN model |
-| Zeynep Tasoglu | @ZeynepST | Implemented explainability tools |
+| Zeynep Tasoglu | @ZeynepST | Performed EDA |
 | Zuha Taha | @ztaha16 | Implemented explainability tools |
 
 ---
