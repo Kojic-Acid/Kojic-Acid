@@ -79,17 +79,34 @@
 
 ## **📈 Results & Key Findings**
 
-**Describe (as applicable):**
 
-* Performance metrics (e.g., Kaggle Leaderboard score, F1-score)
-* How your model performed overall
-* How your model performed across different skin tones (AJL)
-* Insights from evaluating model fairness (AJL)
+## **📊 Data Exploration**
 
-**Potential visualizations to include:**
+**Dataset Overview:**
+The primary dataset used for this project is a subset of the Fitzpatrick17k dataset, which contains approximately 4,500 images representing 21 skin conditions across diverse skin tones. The dataset is sourced from two reputable dermatology websites, DermaAmin and Atlas Dermatologico, and includes metadata such as:
+* md5hash: An alphanumeric hash serving as a unique identifier for each image. It represents the file name of the image without the .jpg extension.
+* fitzpatrick_scale: An integer in the range [-1, 0) and [1, 6] indicating the Fitzpatrick Skin Tone (FST) as self-described by the individual.
+* fitzpatrick_centaur: An integer in the range [-1, 0) and [1, 6] indicating the Fitzpatrick Skin Tone (FST) as assigned by Centaur Labs, a medical data annotation firm.
+* labels: The target variable representing the skin condition (e.g., squamous-cell-carcinoma, acne, melanoma).
+* quality control (qc): Annotations by board-certified dermatologists indicating the diagnostic quality of the images.
 
-* Confusion matrix, precision-recall curve, feature importance plot, prediction distribution, outputs from fairness or explainability tools
+The dataset is split into:
+1. Training Set: Contains labeled images organized into subdirectories by skin condition.
+2. Test Set: Contains unlabeled images for making predictions.
 
+**Exploratory Data Analysis:**
+* Class Distribution: The dataset is highly imbalanced, with some skin conditions (e.g., squamous-cell-carcinoma) having significantly more examples than others (e.g., basal-cell-carcinoma-morpheiform).
+* ![Class Distribution](images/skin_condition_distribution.png)
+
+* Fitzpatrick Skin Tone Distribution: Darker skin tones (FST 4–6) are underrepresented compared to lighter skin tones (FST 1–3). This imbalance could lead to biased model performance.
+* ![FST Distribution](images/FST_distribution.png)
+
+**Preprocessing:**
+* Data Augmentation: To address class imbalance, we initially attempted to use techniques like rotation, flipping, brightness adjustment, and zooming on classes that were underrepresented in the dataset.
+* Class Weights: Class weights were computed to give more importance to underrepresented classes during training.
+
+**Visualizations:**
+* ![Skin Conditions Fitzpatrick Skin Tones](images/skin_conditions_FST_distribution.png)
 ---
 
 ## **🖼️ Impact Narrative**
