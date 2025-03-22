@@ -11,7 +11,7 @@
 | Enrista Ilo | @enrista2112 | EDA and data augmentation |
 | Oyu Enkhbold | @oyu-e | Built and trained CNN model |
 | Zeynep Tasoglu | @ZeynepST | Implemented explainability tools |
-| Zuha Taha | @ | Implemented explainability tools |
+| Zuha Taha | @ztaha16 | Implemented explainability tools |
 
 ---
 
