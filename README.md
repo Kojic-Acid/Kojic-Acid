@@ -1,6 +1,4 @@
-# GitHub Kaggle Project README Template
-
-⚠️ _Remember to update the above title and remove all guidance notes and examples in this template, before finalizing your README_
+# Equitable AI for Dermatology Kaggle Competition - Team Kojic Acid README
 
 ---
 
@@ -11,7 +9,7 @@
 | Ariel Trusty | @Artrusty | Built CNN model, performed data augmentation |
 | Claire Cho | @claireecho | Led EDA, visualized dataset distributions, handled missing data |
 | Enrista Ilo | @enrista2112 | EDA and data augmentation |
-| Oyu Enkhbold | @oyu-e | Implemented explainability tools |
+| Oyu Enkhbold | @oyu-e | Built and trained CNN model |
 | Zeynep Tasoglu | @ZeynepST | Implemented explainability tools |
 | Zuha Taha | @ | Implemented explainability tools |
 
