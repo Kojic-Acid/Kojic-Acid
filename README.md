@@ -28,13 +28,49 @@
 
 ## **👩🏽‍💻 Setup & Execution**
 
-**Provide step-by-step instructions so someone else can run your code and reproduce your results. Depending on your setup, include:**
+### 📦 1. Clone the Repository
 
-* How to clone the repository
-* How to install dependencies
-* How to set up the environment
-* How to access the dataset(s)
-* How to run the notebook or scripts
+```bash
+git clone https://github.com/your-username/Kojic-Acid.git
+cd Kojic-Acid
+```
+
+---
+
+### 📁 2. Access the Dataset
+
+Download the dataset from the official Kaggle competition page:  
+🔗 [BTT AI AJL 2025 – Dataset](https://www.kaggle.com/competitions/bttai-ajl-2025/data)
+
+> Make sure you're logged into Kaggle and have accepted the competition rules before downloading.  
+> After downloading, upload the dataset to your Google Drive and adjust the file paths in the notebook as needed.
+
+---
+
+### 📓 3. Run the Notebook in Google Colab
+
+This project is designed to run easily in **Google Colab**.
+
+Steps:
+1. Open [Google Colab](https://colab.research.google.com/)
+2. Upload or open the notebook file (e.g., `kojic_acid_model.ipynb`)
+3. Mount your Google Drive:
+    ```python
+    from google.colab import drive
+    drive.mount('/content/drive')
+    ```
+4. Make sure the dataset path in the notebook matches your Drive location
+5. Run all cells
+
+---
+
+### ⚙️ 4. Install dependencies
+
+```bash
+pip install tensorflow pandas scikit-learn matplotlib seaborn
+```
+
+---
 
 ---
 
