@@ -45,15 +45,14 @@
 
 ## **🏗️ Project Overview**
 
-**Describe:**
+### 🏆 Kaggle Competition Explanation
+AI governs access to information, opportunities, and freedom, but it can also reinforce harmful biases like racism and ableism, impacting areas like healthcare and justice. The Algorithmic Justice League (AJL) raises awareness of these harms through esearch, supporting advocates and communities most affected. One example is dermatology AI, which often underperforms for darker skin tones due to biased data, leading to health disparities. To address this, Break Through Tech and AJL invite participants to build a more inclusive dermatology AI model.
 
-* The Kaggle competition and its connection to the Break Through Tech AI Program
-* The objective of the challenge
-* The real-world significance of the problem and the potential impact of your work
+### 🎯 Challenge Objective
+The objective is to train a machine learning model that can accurately identify 21 different skin conditions across a range of skin tones using the datasets provided on Kaggle and to create a final GitHub write-up that documents process and model. The README should also highlights how fairness and inclusion were prioritized. Tools like visualizations, explainability methods, or creative storytelling should be used.
 
----
-
-## **📊 Data Exploration**
+### 🌎 Real-World Significance
+This project addresses a major gap in healthcare AI, which is the lack of representation of diverse skin tones in dermatology tools. When AI models are trained mostly on lighter skin tones, they often misdiagnose or overlook conditions on darker skin. This can lead to delayed or incorrect treatment for those people. By building a more inclusive model, this project can help reduce those health disparities, improve diagnosis accuracy for everyone, and promote fairness in medical technology.
 
 ## **📊 Data Exploration**
 
