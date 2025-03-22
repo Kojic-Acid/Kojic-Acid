@@ -10,7 +10,7 @@
 | ----- | ----- | ----- |
 | Ariel Trusty | @Artrusty | Built CNN model, performed data augmentation |
 | Claire Cho | @claireecho | Led EDA, visualized dataset distributions, handled missing data |
-| Enrista Ilo | @enrista2112 | Implemented explainability tools |
+| Enrista Ilo | @enrista2112 | EDA and data augmentation |
 | Oyu Enkhbold | @oyu-e | Implemented explainability tools |
 | Zeynep Tasoglu | @ | Implemented explainability tools |
 | Zuha Taha | @ | Implemented explainability tools |
@@ -69,17 +69,19 @@
 
 ## **🧠 Model Development**
 
-**Describe (as applicable):**
+We used a convolutional neural network (CNN) with transfer learning, leveraging a pre-trained ResNet-50 model. On top of this, we added a custom classification head consisting of a global average pooling layer, a dense ReLU layer with dropout for regularization, and a layer with the softmax function to output probabilities for each skin condition class.
 
-* Model(s) used (e.g., CNN with transfer learning, regression models)
-* Feature selection and Hyperparameter tuning strategies
-* Training setup (e.g., % of data for training/validation, evaluation metric, baseline performance)
+To optimize for Google Colab’s free tier GPU memory and runtime limits, we used slightly smaller image input sizes (160x160) instead of the standard sizes. This allowed us to speed up training and inference without significant drops in performance. This helped make the process more efficient and scalable on limited hardware.
+
+We developed data exploratory analysis and used extensive data augmentation with ImageDataGenerator to increase dataset diversity and reduce overfitting. Augmentations included rotation, width/height shifts, horizontal/vertical flips, shear, zoom, and brightness adjustments. These were all useful for classifying skin condition images with varied orientation and lighting conditions.
+
+The training set comprised 80% of the data, with the remaining 20% used for validations. Labels were encoded with Label Encoder, and the model was trained with Adam optimizer with a learning rate of 0.0001. We used early stopping and model checkpointing based on the validation accuracy to avoid overfitting. We evaluated performance on the validation set using metrics such as F1 score, accuracy, and a confusion matrix, allowing us to assess per-class performance and identify common misclassifications. This approach provided a balance between accuracy and training efficiency under limited compute.
 
 ---
 
 ## **📈 Results & Key Findings**
 
-
+---
 ## **📊 Data Exploration**
 
 **Dataset Overview:**
@@ -96,17 +98,19 @@ The dataset is split into:
 
 **Exploratory Data Analysis:**
 * Class Distribution: The dataset is highly imbalanced, with some skin conditions (e.g., squamous-cell-carcinoma) having significantly more examples than others (e.g., basal-cell-carcinoma-morpheiform).
-* ![Class Distribution](images/skin_condition_distribution.png)
+![Class Distribution](images/skin_condition_distribution.png)
 
 * Fitzpatrick Skin Tone Distribution: Darker skin tones (FST 4–6) are underrepresented compared to lighter skin tones (FST 1–3). This imbalance could lead to biased model performance.
-* ![FST Distribution](images/FST_distribution.png)
+![FST Distribution](images/FST_distribution.png)
 
 **Preprocessing:**
-* Data Augmentation: To address class imbalance, we initially attempted to use techniques like rotation, flipping, brightness adjustment, and zooming on classes that were underrepresented in the dataset.
+* Data Augmentation: To address class imbalance, techniques like rotation, flipping, brightness adjustment, and zooming were applied to underrepresented classes.
 * Class Weights: Class weights were computed to give more importance to underrepresented classes during training.
+* Image Resizing: All images were resized to 160x160 pixels to reduce computational load.
 
 **Visualizations:**
-* ![Skin Conditions Fitzpatrick Skin Tones](images/skin_conditions_FST_distribution.png)
+![Skin Conditions Fitzpatrick Skin Tones](images/skin_conditions_FST_distribution.png)
+  
 ---
 
 ## **🖼️ Impact Narrative**
