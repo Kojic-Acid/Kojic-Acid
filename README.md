@@ -108,7 +108,7 @@ The model achieved a weighted F1 score of 0.31, with precision and recall both a
 ![F1 Scores](images/kojic_acid_f1scores.png)
 
 
-The confusion matrix visualization was particularly helpful in highlighting the model’s strengths and areas for refinement. Future work could build on this by exploring class merging, refining augmentation strategies, or conducting a fairness analysis across skin tone categories (AJL).
+The confusion matrix visualization was particularly helpful in highlighting the model’s strengths and areas for refinement. Future work could build on this by exploring class merging or refining augmentation strategies.
 
 
 
