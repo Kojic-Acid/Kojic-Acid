@@ -19,15 +19,12 @@
 
 ## **🎯 Project Highlights**
 
-**Example:**
-
-* Built a \[insert model type\] using \[techniques used\] to solve \[Kaggle competition task\]
-* Achieved an F1 score of \[insert score\] and a ranking of \[insert ranking out of participating teams\] on the final Kaggle Leaderboard
+* Built a convolutional neural network (CNN) using transfer learning from a pre-trained ResNet-50 model to classify skin conditions equally across diverse skin tones. 
+* Achieved an F1 score of \[insert score\] and a ranking of 30 on the final Kaggle Leaderboard
 * Used \[explainability tool\] to interpret model decisions
-* Implemented \[data preprocessing method\] to optimize results within compute constraints
+* Implemented data augmentation and image resizing to optimize results within compute constraints
 
 🔗 [Equitable AI for Dermatology | Kaggle Competition Page](https://www.kaggle.com/competitions/bttai-ajl-2025/overview)
-🔗 [WiDS Datathon 2025 | Kaggle Competition Page](https://www.kaggle.com/competitions/widsdatathon2025/overview)
 
 ---
 
@@ -54,6 +51,7 @@ The objective is to train a machine learning model that can accurately identify 
 ### 🌎 Real-World Significance
 This project addresses a major gap in healthcare AI, which is the lack of representation of diverse skin tones in dermatology tools. When AI models are trained mostly on lighter skin tones, they often misdiagnose or overlook conditions on darker skin. This can lead to delayed or incorrect treatment for those people. By building a more inclusive model, this project can help reduce those health disparities, improve diagnosis accuracy for everyone, and promote fairness in medical technology.
 
+---
 ## **📊 Data Exploration**
 
 **Dataset Overview:**
