@@ -11,7 +11,7 @@
 | Ariel Trusty | @Artrusty | Built CNN model, performed data augmentation |
 | Claire Cho | @claireecho | Led EDA, visualized dataset distributions, handled missing data |
 | Enrista Ilo | @enrista2112 | Implemented explainability tools |
-| Oyu Enkhbold | @ | Implemented explainability tools |
+| Oyu Enkhbold | @oyu-e | Implemented explainability tools |
 | Zeynep Tasoglu | @ | Implemented explainability tools |
 | Zuha Taha | @ | Implemented explainability tools |
 
