@@ -142,7 +142,7 @@ Check out [this guide](https://drive.google.com/file/d/1kYKaVNR\_l7Abx2kebs3AdDi
 
 ## **📄 References & Additional Resources**
 
-* Cite any relevant papers, articles, or tools used in your project
-* 
-“Building Computer Vision Applications with Python Online Class: LinkedIn Learning, Formerly Lynda.Com.” LinkedIn, www.linkedin.com/learning/building-computer-vision-applications-with-python. Accessed 22 Mar. 2025. 
+* Groh, M., Harris, C., Soenksen, L., Lau, F., Han, R., Kim, A., Koochek, A., & Badri, O. (2021). Evaluating deep neural networks trained on clinical images in dermatology with the Fitzpatrick 17k dataset. *arXiv preprint arXiv:2104.09957*. https://arxiv.org/abs/2104.09957
+* “Building Computer Vision Applications with Python Online Class: LinkedIn Learning, Formerly Lynda.Com.” LinkedIn, www.linkedin.com/learning/building-computer-vision-applications-with-python. Accessed 22 Mar. 2025.
+
 ---
