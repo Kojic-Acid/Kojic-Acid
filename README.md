@@ -6,7 +6,7 @@
 
 | Name | GitHub Handle | Contribution |
 | ----- | ----- | ----- |
-| Ariel Trusty | @Artrusty | Built CNN model, performed data augmentation |
+| Ariel Trusty | @Artrusty | Implemented explainability tools |
 | Claire Cho | @claireecho | Led EDA, visualized dataset distributions, handled missing data |
 | Enrista Ilo | @enrista2112 | EDA and data augmentation |
 | Oyu Enkhbold | @oyu-e | Built and trained CNN model |
