@@ -18,8 +18,7 @@
 ## **🎯 Project Highlights**
 
 * Built a convolutional neural network (CNN) using transfer learning from a pre-trained ResNet-50 model to classify skin conditions equally across diverse skin tones. 
-* Achieved an F1 score of \[insert score\] and a ranking of 30 on the final Kaggle Leaderboard
-* Used \[explainability tool\] to interpret model decisions
+* Achieved an F1 score of 0.31 and a ranking of 31 on the final Kaggle Leaderboard
 * Implemented data augmentation and image resizing to optimize results within compute constraints
 
 🔗 [Equitable AI for Dermatology | Kaggle Competition Page](https://www.kaggle.com/competitions/bttai-ajl-2025/overview)
@@ -133,7 +132,7 @@ The training set comprised 80% of the data, with the remaining 20% used for vali
 
 ## **📈 Results & Key Findings**
 
-Our model achieved a 29th place finish on the Kaggle Leaderboard under the team name VIR_AJL_Team Kojic Acid. Evaluation on the validation set showed that the model performed well across a wide range of skin conditions, with strong alignment along the diagonal of the confusion matrix, indicating accurate class predictions.
+Our model achieved a 31st place finish on the Kaggle Leaderboard under the team name VIR_AJL_Team Kojic Acid. Evaluation on the validation set showed that the model performed well across a wide range of skin conditions, with strong alignment along the diagonal of the confusion matrix, indicating accurate class predictions.
 
 Notably, the model correctly identified 33 cases of acne-vulgaris, 46 of squamous cell carcinoma, and 27 of folliculitis, among others. These strong per-class performances suggest that the model learned to distinguish meaningful visual patterns across a diverse set of dermatological conditions. Some overlap occurred in visually similar classes—for example, between acne and acne-vulgaris or basal and squamous cell carcinoma—which is expected given the complexity of skin condition classification.
 
