@@ -7,7 +7,7 @@
 | Name | GitHub Handle | Contribution |
 | ----- | ----- | ----- |
 | Ariel Trusty | @Artrusty | Implemented explainability tools |
-| Claire Cho | @claireecho | Led EDA, visualized dataset distributions, handled missing data |
+| Claire Cho | @claireecho | Loaded Dataset and Conducted EDA |
 | Enrista Ilo | @enrista2112 | EDA and data augmentation |
 | Oyu Enkhbold | @oyu-e | Built and trained CNN model |
 | Zeynep Tasoglu | @ZeynepST | Performed EDA |
