@@ -12,7 +12,7 @@
 | Claire Cho | @claireecho | Led EDA, visualized dataset distributions, handled missing data |
 | Enrista Ilo | @enrista2112 | EDA and data augmentation |
 | Oyu Enkhbold | @oyu-e | Implemented explainability tools |
-| Zeynep Tasoglu | @ | Implemented explainability tools |
+| Zeynep Tasoglu | @ZeynepST | Implemented explainability tools |
 | Zuha Taha | @ | Implemented explainability tools |
 
 ---
