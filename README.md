@@ -91,6 +91,8 @@ We developed data exploratory analysis and used extensive data augmentation with
 
 The training set comprised 80% of the data, with the remaining 20% used for validations. Labels were encoded with Label Encoder, and the model was trained with Adam optimizer with a learning rate of 0.0001. We used early stopping and model checkpointing based on the validation accuracy to avoid overfitting. We evaluated performance on the validation set using metrics such as F1 score, accuracy, and a confusion matrix, allowing us to assess per-class performance and identify common misclassifications. This approach provided a balance between accuracy and training efficiency under limited compute.
 
+
+
 ---
 
 ## **📈 Results & Key Findings**
@@ -99,7 +101,12 @@ Our model achieved a 29th place finish on the Kaggle Leaderboard under the team 
 
 Notably, the model correctly identified 33 cases of acne-vulgaris, 46 of squamous cell carcinoma, and 27 of folliculitis, among others. These strong per-class performances suggest that the model learned to distinguish meaningful visual patterns across a diverse set of dermatological conditions. Some overlap occurred in visually similar classes—for example, between acne and acne-vulgaris or basal and squamous cell carcinoma—which is expected given the complexity of skin condition classification.
 
+![Confusion Matrix](images/kojic_acid_confusionmatrix.png)
+
 The model achieved a weighted F1 score of 0.31, with precision and recall both at 0.34. F1 scores across classes ranged from 0.00 to 0.51, reflecting strong performance on certain classes and room for growth on others. Overall, these results demonstrate the model's potential in tackling a challenging, high-class-count classification task.
+
+![F1 Scores](images/kojic_acid_f1scores.png)
+
 
 The confusion matrix visualization was particularly helpful in highlighting the model’s strengths and areas for refinement. Future work could build on this by exploring class merging, refining augmentation strategies, or conducting a fairness analysis across skin tone categories (AJL).
 
