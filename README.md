@@ -164,8 +164,8 @@ As Dr. Randi mentioned in her challenge overview, “Through poetry, art, and st
 As you answer the questions below, consider using not only text, but also illustrations, annotated visualizations, poetry, or other creative techniques to make your work accessible to a wider audience.
 Check out [this guide](https://drive.google.com/file/d/1kYKaVNR\_l7Abx2kebs3AdDi6TlPviC3q/view) from the Algorithmic Justice League for inspiration!
 
-1. What steps did you take to address [model fairness](https://haas.berkeley.edu/wp-content/uploads/What-is-fairness_-EGAL2.pdf)? (e.g., leveraging data augmentation techniques to account for training dataset imbalances; using a validation set to assess model performance across different skin tones)
-2. What broader impact could your work have?
+1. What steps did you take to address [model fairness](https://haas.berkeley.edu/wp-content/uploads/What-is-fairness_-EGAL2.pdf)? (e.g., leveraging data augmentation techniques to account for training dataset imbalances; using a validation set to assess model performance across different skin tones): To address model fairness, we performed data augmentation to address class imbalance and computed class weights to give more importance to underrepresented classes during training. 
+2. What broader impact could your work have? This model could help improve diagnosis accuracy for everyone regardless of skin tone and ultimately promote ethical AI development in healthcare. 
 
 ---
 
@@ -173,9 +173,9 @@ Check out [this guide](https://drive.google.com/file/d/1kYKaVNR\_l7Abx2kebs3AdDi
 
 **Address the following:**
 
-* What are some of the limitations of your model?
-* What would you do differently with more time/resources?
-* What additional datasets or techniques would you explore?
+* Some limitations of the model include the usage of ResNet-50 with 160x160 images instead of the standard sizes. While these images were used to reduce computational load, this may have limited the model's ability to capture finer details. 
+* With more time and resouces, we would explore Generative Adversial Networks (GANs) for data augmentation. Given the imbalanced nature of this dataset, GANs could be beneficial in enhancing model fairness and performance. 
+* What additional datasets or techniques would you explore? Additional techniques to explore include self-supervised learning to train the model with unlabeled images and reduce reliance on labeled dataset. Multi-Modal Learning would also be explored to improve diagnostic accuracy by combining image with patient metadata. 
 
 ---
 
